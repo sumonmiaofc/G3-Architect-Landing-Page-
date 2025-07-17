@@ -27,6 +27,10 @@ body{
     
 }
 
+main > section{
+    margin-bottom: 137px;
+}
+
 /* header css start here */
 
 .bg-color{
@@ -79,6 +83,7 @@ body{
 
 .banner-content img{
     max-width: 100%;
+    margin-bottom: 45px;
 }
 
 .banner-title{
@@ -104,7 +109,7 @@ body{
 
 /* Quick List Css Start Here */
 
-.quick-list{
+.quick-list-container{
     display: flex;
     max-width: 1440px;
     margin: 0 auto;
@@ -120,16 +125,105 @@ body{
     margin-top: 85px;
 }
 
+.quick-list-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+
+}
+.quick-list{
+    color: rgb(114, 114, 114);
+}
+.of-our{
+    color: rgb(19, 19, 19);
+}
+.features{
+    color: rgb(255, 144, 14);
+}
+.quick-list-content{
+    width: 468px;
+}
+
+.quick-list-desc{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(114, 114, 114);
+}
+
+
+/* Features CSS Start Here */
+.feature-container{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    gap: 130px;
+    /* justify-items: center;
+    align-items: center; */
+}
+.features-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 21px;
+
+}
+
+.features-desc{
+    color: rgb(114, 114, 114);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.features-card{
+    padding: 30px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.experience-btn{
+    padding: 30px 42px;
+    background-color: rgb(255, 144, 14);
+    border: none;
+    border-radius: 8px;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+.experience-years{
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+}
+.experience-years-name{
+    color: white;
+    font: 1rem;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive CSS Here */
 @media screen and (max-width: 576px) {
-    .navbar, .item-links{
+    .navbar, .item-links, .quick-list-container{
         flex-direction: column;
     }
+    
     .banner-title{
         font-size: 3rem;
-        /* padding-left: 20px;
-        padding-right: 20px; */
 
     }
 
@@ -137,4 +231,18 @@ body{
         padding-left: 20px;
         padding-right: 20px;
     }
+
+    .quick-list-img{
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .quick-list-content{
+        width: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
 }
