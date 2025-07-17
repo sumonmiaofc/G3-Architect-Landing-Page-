@@ -8,3 +8,51 @@
   font-weight: <weight>;
   font-style: normal;
 }
+
+
+/* shared Css Here */
+
+body{
+    margin: 0px auto;
+}
+
+
+/* header css start here */
+
+.bg-color{
+    background: rgba(255, 144, 14, 0.1);
+    
+}
+
+.brand-name{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item-links{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.item-links a{
+    text-decoration: none;
+    font-size: 1.12rem;
+    font-weight: 500;
+    color: rgb(66, 66, 66);
+}
+
+.item-links a:hover{
+    color: rgb(255, 144, 14);
+
+}
+
+.banner, .navbar{
+    max-width: 1140px;
+    margin: 0 auto;
+}
